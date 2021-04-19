@@ -1,0 +1,49 @@
+body {
+  background-color: #333;
+}
+
+.main {
+  --size: min( 80vw, 80vh, 500px );
+  width: var(--size);
+  height: var(--size);
+  background-color: #444;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: calc( var(--size) / 6 );
+  font-size: calc( var(--size) / 100 );
+}
+
+.hide {
+  display: none !important;
+}
+
+.input {
+  display: none;
+}
+
+.input-label {
+  display: block;
+  background-color: transparent;
+  background: url(upload.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30em;
+  height: 30em;
+  border-radius: 10em;
+  border: solid 1.5em #ccc;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text {
+  color: #ccc;
+  font-size: 2em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
